@@ -1,14 +1,21 @@
+header {
+    color: cornsilk;
+}
 
 body {
-    background-color: coral;}
+    background-color: coral;
+    color: #757878;
+}
 
 .highScore {
-    color:cornsilk
+    text-align: left;
 }
 
 .timeLeft {
     text-align: left;
-    color: cornsilk;
+   
 }
 
-  
+.startingTitleScreen { 
+    color: #929494;
+}

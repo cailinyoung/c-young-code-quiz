@@ -27,35 +27,46 @@
   </head>
 
   <body>
+
+    <!-- header  -->
     <header class= "row">
       <div class = container></div>
-        <h3 class="m-2 col-5" id = "highScore" style = "font-family: 'Montserrat', sans-serif"; > High Score: </h3>
-        <h3 class="m-2 col-4" id="timeLeft" style = "font-family: 'Montserrat', sans-serif"; >Time Left: </h3>
+        <h3 class="m-2 col-5"; id = "highScore"; style = "font-family: 'Montserrat', sans-serif"; > High Score: </h3>
+        <h3 class="m-2 col-4"; id="timeLeft"; style = "font-family: 'Montserrat', sans-serif"; >Time Left: </h3>
       </div>
     </header>
 
-    <div class="jumbotron">
+    <!-- jumbotron -->
+    <div class="jumbotron" id = startingTitleScreen style = "font-family: 'Montserrat', sans-serif"; color>
         <div container>
         <h1 class="display-4">JavaScript Coding Quiz</h1>
-        <p class="lead"> :) </p>
+        <p class="lead">  </p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-outline-danger btn-lg" href="#" role="button">Start</a>
+        <a class="btn btn-outline-info btn-lg" id = "startButton" href="#" role="button">Start</a>
         </div>
     </div>
 
+    <!-- question button -->
+    <div class="row" id="questionBox" style="display: none;">
+        <div class="jumbotron col-8 m-4 questionScreen">
+          <h1 class="display-4" id="questionNumber">Question</h1>
+          <p class="lead questionAsked">Question Asked</p>
+          <hr class="my-4">
+          <div class="row">
+            <a class="btn btn-primary btn-lg m-2 answerButton" id="a1">answer 1</a>
+            <a class="btn btn-primary btn-lg m-2 answerButton" id="a2">answer 2</a>
+            <a class="btn btn-primary btn-lg m-2 answerButton" id="a3">answer 3</a>
+            <a class="btn btn-primary btn-lg m-2 answerButton" id="a4">answer 4</a>
+          </div>
+        </div>
+      </div>
      
 
 
 
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- script info -->
+    <script type="text/javascript" src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
