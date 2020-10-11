@@ -1,11 +1,42 @@
+var startButton 
+var startTitleScreen 
+var questionScreen 
+var questions 
+var timerE1
+var nextButton
+var username
+var answerBtn1
+
+
+
+
+
+
+startButton.addEventListener('click', function(event) {
+  startScreen.style.display = 'none';
+  questionScreen.style.display = 'block';
+  username.style,display = 'none';
+  timer();
+  getNewQuestion();
+})
+
+function timer() {
+  var timer = setInterval(function(){
+    if (time === 0) {
+      clearInterval(timer)
+      endGame()
+    }
+
+  })
+}
+
+
 // storage function // 
 if (sessionStorage.clickcount) {
     sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
   } else {
     sessionStorage.clickcount = 1;
   }
-  document.getElementById("result").innerHTML = "You have clicked the button " +
-  sessionStorage.clickcount + " time(s) in this session.";
 
 // button & timer function //
 document.getElementById("beginButton").addEventListener("click", function(){
@@ -13,13 +44,12 @@ document.getElementById("beginButton").addEventListener("click", function(){
     timerLeft = document.getElementById("timeLeft");
 })
 
-// toggle function // 
-toggledId = "startingTitleScreen";    
-    toggleElement("");
-toggledId = "questionBox";
-    toggleElement("");
+// // toggle function // 
+// toggledId = "startingTitleScreen";    
+//     toggleElement("");
+// toggledId = "questionBox";
+//     toggleElement("");
 
 // question function //
-var questionScreen
 
 
