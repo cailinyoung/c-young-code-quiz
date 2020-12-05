@@ -1,16 +1,11 @@
 var startButton 
-var startTitleScreen 
+var startTitleScreen = document.querySelector("");
 var questionScreen 
-var questions 
-var timerE1
+var questions =""; 
+var timerE1 ="";
 var nextButton
 var username
 var answerBtn1
-
-
-
-
-
 
 startButton.addEventListener('click', function(event) {
   startScreen.style.display = 'none';
