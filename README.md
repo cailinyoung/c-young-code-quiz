@@ -10,7 +10,7 @@
 
 ## Repo
 * [Repo](https://github.com/cailinyoung/c-young-code-quiz)
-* [Live Site](https://cailinyoung.netlify.app/)
+* [Live Site](https://cailinyoung.github.io/c-young-code-quiz/)
 
 ## Contributors
 * Contributor: [Cailin Young](https://github.com/cailinyoung)
