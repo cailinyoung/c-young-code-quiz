@@ -1,1 +1,0 @@
-# c-young-code-quiz

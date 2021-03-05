@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
+        type="text/css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <title>Art Quiz</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-white justify-content-between" style="padding: 0%;">
+        <form class="form-inline">
+            <a style="float: right; font-size: large;">Time: <span class="timer"></span></a>
+        </form>
+    </nav>
+
+    <div class="row justify-content-center">
+        <div class="container-lg col-lg-8 col-md-8 col-sm-10 col-12 border rounded bg-white">
+            <h1>Art History Quiz</h1>
+            <p>Let's see how much you know about art history. Keep in mind, every time you answer incorrectly, your time
+                gets penalized... good luck! </p>
+            <button type="start" class="start-btn btn-info">Let's Get Started</button>
+        </div>
+    </div>
+
+    <div class="container-lg col-lg-8 col-md-8 col-sm-10 col-12 border rounded bg-white">
+        <div id="question-card">
+            <h1 id="questions"></h1>
+            <div id="answer-buttons">
+                <ul>
+                    <button id="btn1" class="btn btn-primary" data-answer="1">1</button>
+                    <button id="btn2" class="btn btn-danger" data-answer="2">2</button>
+                    <button id="btn3" class="btn btn-warning" data-answer="3">3</button>
+                    <button id="btn4" class="btn btn-success" data-answer="4">4</button>
+                </ul>
+            </div>
+            <div id="message-area">
+
+            </div>
+            <div id='username'>
+                <h2>Hit "refresh" to play again!</h2>
+                <label for="name">Please Enter Your Name: </label><input type="text" id="name"><br>
+                <button class="submit-btn btn-success" id="name-submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="highScores">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">High Scores</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Test test
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--my javascript-->
+    <script src="script.js"></script>
+
+    <!-- bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

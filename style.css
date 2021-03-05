@@ -1,21 +1,64 @@
-header {
-    color: cornsilk;
+*,
+*::before,
+*::after {
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: coral;
-    color: #757878;
+    font-size: 25px;
+    padding: 5px;
+    color: black;
 }
 
-.highScore {
-    text-align: left;
+.container-lg {
+    text-align: center;
+    align-items: center;
+    max-width: 500px;
+    position: relative;
+    margin-top: 80px;
+}
+.container-lg h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+.container-lg p {
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
 }
 
-.timeLeft {
-    text-align: left;
-   
+.container-lg .question-card {
+    text-align: center;
+    align-items: center;
+    max-width: 500px;
+    justify-content: center;
+}
+#question-card {
+    display: none;
+}
+#answer-buttons {
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    max-width: 500px;
+}
+#questions {
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 5px;
+    max-width: 500px;
 }
 
-.backButton {
-        justify-content: center;
+#highscore {
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    max-width: 500px;
+    position: relative;
+}
+#btns-list {
+    list-style-type: none;
 }
